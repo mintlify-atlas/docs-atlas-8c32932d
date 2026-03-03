@@ -1,0 +1,230 @@
+---
+title: Website widget integration
+description: Learn how to embed RatingFlow widgets on your website to showcase positive reviews and increase conversion rates with social proof.
+---
+
+## Overview
+
+RatingFlow's website widget integration allows you to display your hard-earned positive reviews directly on your website. By showcasing authentic 4 and 5-star ratings from real customers, you can increase trust, credibility, and conversion rates with powerful social proof.
+
+<Note>
+Website widgets displaying customer reviews can increase conversion rates by up to 270% according to industry studies.
+</Note>
+
+## How website widgets work
+
+Once you've collected positive reviews through RatingFlow's smart-routing system, you can automatically display them on your website:
+
+<Steps>
+  <Step title="Collect reviews">
+    Use RatingFlow to gather positive reviews from Google Maps, Facebook, and Trustpilot.
+  </Step>
+  
+  <Step title="Generate widget code">
+    Create an embeddable widget in your RatingFlow dashboard with your preferred styling and display options.
+  </Step>
+  
+  <Step title="Embed on your website">
+    Copy and paste the widget code into your website's HTML where you want reviews to appear.
+  </Step>
+  
+  <Step title="Automatic updates">
+    As new reviews come in, your widget automatically updates to display your latest positive feedback.
+  </Step>
+</Steps>
+
+## Widget types and options
+
+### Review carousel
+
+Display your latest 4 and 5-star reviews in a rotating carousel format that catches visitor attention:
+
+```html
+<!-- Example widget embed code -->
+<div id="ratingflow-carousel" data-widget="carousel"></div>
+<script src="https://cdn.ratingflow.com/widget.js"></script>
+<script>
+  RatingFlow.init({
+    type: 'carousel',
+    containerId: 'ratingflow-carousel',
+    apiKey: 'YOUR_API_KEY',
+    limit: 5,
+    platforms: ['google', 'facebook', 'trustpilot']
+  });
+</script>
+```
+
+### Star rating badge
+
+Show your average star rating in a compact badge format, perfect for headers or sidebars:
+
+```html
+<!-- Star rating badge -->
+<div id="ratingflow-badge" data-widget="badge"></div>
+<script src="https://cdn.ratingflow.com/widget.js"></script>
+<script>
+  RatingFlow.init({
+    type: 'badge',
+    containerId: 'ratingflow-badge',
+    apiKey: 'YOUR_API_KEY',
+    showCount: true
+  });
+</script>
+```
+
+### Grid layout
+
+Present multiple reviews in a clean grid format, ideal for dedicated testimonial pages:
+
+```html
+<!-- Grid layout widget -->
+<div id="ratingflow-grid" data-widget="grid"></div>
+<script src="https://cdn.ratingflow.com/widget.js"></script>
+<script>
+  RatingFlow.init({
+    type: 'grid',
+    containerId: 'ratingflow-grid',
+    apiKey: 'YOUR_API_KEY',
+    columns: 3,
+    limit: 9
+  });
+</script>
+```
+
+## Customization options
+
+### Styling and branding
+
+Customize widgets to match your website's design:
+
+- **Color scheme**: Match your brand colors
+- **Typography**: Use your website's fonts
+- **Layout options**: Choose between carousel, grid, list, or badge formats
+- **Animation effects**: Configure transitions and hover effects
+
+### Filtering and display rules
+
+<Steps>
+  <Step title="Select star ratings">
+    Choose to display only 5-star reviews, or include 4-star reviews as well.
+  </Step>
+  
+  <Step title="Choose platforms">
+    Display reviews from specific platforms (Google, Facebook, Trustpilot) or all sources.
+  </Step>
+  
+  <Step title="Set quantity limits">
+    Control how many reviews appear in your widget (e.g., show the latest 5 or 10 reviews).
+  </Step>
+  
+  <Step title="Configure auto-refresh">
+    Set how frequently the widget checks for new reviews to display.
+  </Step>
+</Steps>
+
+## Benefits of website widgets
+
+### Increase conversion rates
+
+Displaying genuine customer reviews creates trust and credibility, directly influencing visitor purchasing decisions. Potential buyers can see that real people have had positive experiences with your business.
+
+### Showcase social proof
+
+Social proof is one of the most powerful psychological triggers in marketing. Website widgets provide constant, visible evidence that others trust and recommend your business.
+
+### Keep content fresh
+
+Unlike static testimonials, RatingFlow widgets automatically update as you collect new reviews, ensuring your website always displays current, relevant social proof.
+
+### Improve SEO
+
+Review widgets can contribute to your website's SEO by adding fresh, keyword-rich content that search engines value.
+
+## Best practices
+
+### Strategic placement
+
+Place review widgets where they'll have the most impact:
+
+- **Homepage**: Build immediate credibility with first-time visitors
+- **Product/service pages**: Reinforce buying decisions at critical moments
+- **Checkout pages**: Reduce cart abandonment with last-minute social proof
+- **Landing pages**: Increase conversion rates on paid traffic campaigns
+
+### Mobile optimization
+
+<Note>
+Ensure your widget is responsive and displays correctly on mobile devices, where an increasing percentage of website traffic originates.
+</Note>
+
+### Balance and authenticity
+
+While you want to showcase positive reviews, avoid appearing too perfect. Including occasional 4-star reviews alongside 5-star reviews can actually increase credibility by appearing more authentic.
+
+### Update regularly
+
+Keep your review collection active so your widgets always display recent feedback. Fresh reviews are more persuasive than outdated ones.
+
+## Installation methods
+
+### Direct HTML embed
+
+Copy and paste the provided widget code directly into your website's HTML:
+
+```html
+<div id="ratingflow-widget"></div>
+<script src="https://cdn.ratingflow.com/widget.js"></script>
+<script>
+  RatingFlow.init({
+    containerId: 'ratingflow-widget',
+    apiKey: 'YOUR_API_KEY'
+  });
+</script>
+```
+
+### WordPress plugin
+
+Use the RatingFlow WordPress plugin for easy installation without touching code:
+
+1. Install the RatingFlow plugin from your WordPress dashboard
+2. Connect your RatingFlow account using your API key
+3. Use shortcodes or widgets to place reviews anywhere on your site
+
+### Other CMS platforms
+
+RatingFlow widgets work with all major CMS platforms including Shopify, Wix, Squarespace, and custom-built websites.
+
+<Note>
+Check your RatingFlow dashboard for platform-specific integration guides and support documentation.
+</Note>
+
+## White label options for agencies
+
+If you're using RatingFlow's white label solution for agency clients, website widgets can be fully customized:
+
+- Remove all RatingFlow branding
+- Apply your agency's branding and styling
+- Use custom domains for widget hosting
+- Provide branded reporting and analytics to clients
+
+## Performance considerations
+
+RatingFlow widgets are optimized for performance:
+
+- **Asynchronous loading**: Widgets load without blocking page rendering
+- **CDN delivery**: Fast loading from global content delivery networks
+- **Lightweight code**: Minimal impact on page load times
+- **Caching**: Smart caching reduces server requests
+
+## Analytics and tracking
+
+Track the impact of your review widgets:
+
+- **Impression tracking**: See how many visitors view your reviews
+- **Click tracking**: Monitor engagement with review content
+- **Conversion attribution**: Understand how reviews influence purchasing decisions
+- **A/B testing**: Test different widget placements and styles to optimize performance
+
+<Note>
+Use your RatingFlow dashboard to access detailed analytics about widget performance and visitor engagement.
+</Note>

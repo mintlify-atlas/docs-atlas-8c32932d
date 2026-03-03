@@ -1,0 +1,184 @@
+---
+title: Platform overview
+description: Understanding RatingFlow's architecture and smart-routing workflow
+---
+
+## How RatingFlow works
+
+RatingFlow is built on a smart-routing system that segments customer sentiment before it reaches public review platforms. This architecture protects your brand reputation while maximizing positive social proof.
+
+## The smart-routing workflow
+
+<Steps>
+  <Step title="Review request delivery">
+    You deliver review requests to customers through multiple channels:
+    
+    - **SMS/Text messages**: Automated bulk or individual text messages with a direct link
+    - **Email campaigns**: Branded email requests sent from your domain
+    - **QR codes**: Scannable codes placed at your physical location
+    
+    All methods direct customers to a private RatingFlow landing page—not directly to Google or other public platforms.
+  </Step>
+  
+  <Step title="Private sentiment capture">
+    When customers click your review link or scan your QR code, they land on a branded page where they rate their experience privately.
+    
+    This is the critical filter layer:
+    
+    <Info>
+      Customers never see Google, Facebook, or any public platform at this stage. They simply provide an honest rating in a neutral environment.
+    </Info>
+    
+    Rating options include:
+    - Star ratings (1-5 stars)
+    - Numeric scores (1-10)
+    - Emoji feedback (happy, neutral, sad)
+  </Step>
+  
+  <Step title="Intelligent routing decision">
+    Based on the customer's rating, RatingFlow automatically routes them to one of two paths:
+    
+    ### 5 star reviews generator (positive path)
+    
+    **Customers who rate 4-5 stars** are immediately redirected to public review platforms:
+    
+    - Google Maps/Google Business Profile
+    - Facebook Business Page
+    - Trustpilot
+    - Yelp (if applicable)
+    - Industry-specific platforms
+    
+    <Tip>
+      This automated redirect to public platforms is what makes RatingFlow a powerful **5 star reviews generator**. Happy customers are guided to leave public reviews with minimal friction.
+    </Tip>
+    
+    ### Negative feedback shield (protection path)
+    
+    **Customers who rate 1-3 stars** are redirected to a private feedback form instead:
+    
+    - They never reach public platforms
+    - They can describe their concerns in detail
+    - You receive an immediate notification
+    - You can respond directly and resolve the issue
+    - The negative sentiment never impacts your public rating
+    
+    <Warning>
+      This doesn't suppress legitimate reviews—it gives you a chance to fix problems before they become permanent public damage.
+    </Warning>
+  </Step>
+  
+  <Step title="Dashboard monitoring and response">
+    All activity flows into your RatingFlow dashboard:
+    
+    - Real-time notification of new reviews (both public and private)
+    - Analytics on request delivery, open rates, and response rates
+    - Private feedback management system
+    - Public review tracking from all connected platforms
+    - Performance metrics by campaign, time period, or channel
+  </Step>
+</Steps>
+
+## Platform architecture
+
+RatingFlow's architecture is designed for scale, reliability, and ease of use:
+
+### Core components
+
+<CardGroup cols={2}>
+  <Card title="Review request engine" icon="paper-plane">
+    Handles SMS, email, and QR code generation. Manages delivery, scheduling, and tracking.
+  </Card>
+  <Card title="Landing page builder" icon="browser">
+    Creates branded, mobile-optimized review pages. Captures sentiment before public routing.
+  </Card>
+  <Card title="Smart router" icon="route">
+    Routes customers to public platforms or private forms based on configurable rating thresholds.
+  </Card>
+  <Card title="Feedback management system" icon="comments">
+    Collects, organizes, and alerts you to private feedback. Enables direct customer communication.
+  </Card>
+  <Card title="Analytics engine" icon="chart-mixed">
+    Tracks all metrics across campaigns. Provides insights into review volume, sentiment trends, and ROI.
+  </Card>
+  <Card title="Widget generator" icon="code">
+    Creates embeddable widgets that display your best reviews on your website.
+  </Card>
+</CardGroup>
+
+### Integration points
+
+RatingFlow integrates with key platforms to maximize your reputation management:
+
+- **Review platforms**: Google My Business, Facebook, Trustpilot, Yelp
+- **Communication channels**: Twilio (SMS), SendGrid (Email), QR code generation
+- **CRM systems**: Import customer data from popular CRM platforms
+- **Website embedding**: JavaScript widgets for displaying reviews
+
+## White label architecture
+
+For agencies, RatingFlow offers complete white labeling:
+
+<Info>
+  The white label system allows you to rebrand every customer-facing element of RatingFlow under your own agency brand.
+</Info>
+
+**White label features:**
+
+- Custom domain mapping (reviews.youragency.com)
+- Full UI rebranding (logo, colors, fonts)
+- Branded email and SMS sender names
+- Custom PDF reports for clients
+- Agency-branded client dashboards
+
+## Security and compliance
+
+RatingFlow is built with security and compliance in mind:
+
+- **Data encryption**: All customer data is encrypted in transit and at rest
+- **GDPR compliance**: Full data privacy controls and right-to-deletion
+- **CAN-SPAM compliance**: Automatic opt-out handling for email requests
+- **TCPA compliance**: SMS consent tracking and opt-out management
+
+<Warning>
+  Always ensure you have permission to contact customers before sending review requests. RatingFlow provides the tools, but compliance is your responsibility.
+</Warning>
+
+## Performance and reliability
+
+- **99.9% uptime**: Enterprise-grade infrastructure ensures your review requests always get delivered
+- **Global delivery**: SMS and email sent through tier-1 providers with worldwide reach
+- **Mobile-optimized**: All landing pages are lightning-fast and work perfectly on any device
+- **Real-time processing**: Reviews are routed instantly—no delays between rating and redirect
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card
+    title="Automated review requests"
+    icon="robot"
+    href="/features/automated-review-requests"
+  >
+    Set up recurring campaigns to keep positive reviews flowing
+  </Card>
+  <Card
+    title="QR code campaigns"
+    icon="qrcode"
+    href="/features/qr-code-reviews"
+  >
+    Generate and deploy QR codes for in-person review collection
+  </Card>
+  <Card
+    title="Website widgets"
+    icon="window"
+    href="/features/website-widgets"
+  >
+    Showcase your 5-star reviews on your website
+  </Card>
+  <Card
+    title="White label setup"
+    icon="building"
+    href="/features/white-label-solution"
+  >
+    Configure RatingFlow for your agency clients
+  </Card>
+</CardGroup>

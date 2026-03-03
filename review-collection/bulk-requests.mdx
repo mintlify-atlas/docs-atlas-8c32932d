@@ -1,0 +1,319 @@
+---
+title: Bulk requests
+description: Send review requests to multiple customers at once to scale your reputation management efforts
+---
+
+## Overview
+
+RatingFlow's bulk request feature allows you to send review requests to multiple customers simultaneously via SMS and email. This powerful capability eliminates the tedious process of manually reaching out to customers one by one.
+
+Bulk requests help you scale your review collection efforts and maintain a consistent flow of positive feedback across all your public review platforms.
+
+## How bulk requests work
+
+The bulk request system streamlines review collection through automation:
+
+<Steps>
+  <Step title="Import your customer list">
+    Upload a list of customer contacts in bulk through CSV import or integrate with your CRM system.
+  </Step>
+  
+  <Step title="Customize your message">
+    Create personalized SMS or email templates that encourage customers to share their feedback.
+  </Step>
+  
+  <Step title="Send to all recipients">
+    Launch your campaign to send review requests to hundreds or thousands of customers at once.
+  </Step>
+  
+  <Step title="Smart routing processes responses">
+    - **Positive ratings (4-5 stars):** Customers are automatically redirected to Google Maps, Facebook, Trustpilot, or other public platforms
+    - **Negative ratings (1-3 stars):** Customers are directed to a private feedback form for issue resolution
+  </Step>
+</Steps>
+
+<Note>
+  RatingFlow acts as a shield for your business, ensuring that satisfied customers publicly advocate for your brand while unsatisfied customers are routed to a private resolution channel.
+</Note>
+
+## Benefits of bulk review requests
+
+<CardGroup cols={2}>
+  <Card title="Save time" icon="clock">
+    Send hundreds of review requests in minutes instead of manually contacting customers one by one.
+  </Card>
+  
+  <Card title="Boost review volume" icon="chart-line">
+    A higher volume of positive reviews directly correlates to higher rankings in the Local Pack and Google Maps.
+  </Card>
+  
+  <Card title="Increase revenue" icon="dollar-sign">
+    Businesses with a 4.5+ star rating generate significantly more revenue than competitors with lower ratings.
+  </Card>
+  
+  <Card title="Protect your brand" icon="shield">
+    Filter out unfair or emotional 1-star feedback before it becomes permanent on public platforms.
+  </Card>
+</CardGroup>
+
+## Setting up bulk requests
+
+<AccordionGroup>
+  <Accordion title="Step 1: Prepare your customer data">
+    Gather customer contact information including:
+    - Full name
+    - Phone number (for SMS requests)
+    - Email address (for email requests)
+    - Any custom fields you want to use for personalization
+    
+    <Tip>
+      Ensure your data is clean and properly formatted to avoid delivery issues. Remove duplicates and verify contact information accuracy.
+    </Tip>
+  </Accordion>
+  
+  <Accordion title="Step 2: Import your contacts">
+    Upload your customer list through CSV import or connect your CRM system for automatic syncing.
+    
+    Common import formats:
+    - CSV file upload
+    - CRM integration
+    - API connection
+  </Accordion>
+  
+  <Accordion title="Step 3: Create your message template">
+    Craft a compelling message that encourages customers to share their experience. Include:
+    - A friendly greeting
+    - Reference to their recent interaction
+    - Clear call-to-action
+    - Your business name and branding
+    
+    <Note>
+      Personalization tokens like {FirstName} and {ServiceType} can significantly improve response rates.
+    </Note>
+  </Accordion>
+  
+  <Accordion title="Step 4: Choose delivery method">
+    Select whether to send requests via SMS, email, or both channels for maximum reach.
+    
+    **SMS benefits:**
+    - Higher open rates (98% vs 20% for email)
+    - Immediate delivery
+    - Mobile-first experience
+    
+    **Email benefits:**
+    - More space for detailed messaging
+    - Lower cost per message
+    - Better for B2B audiences
+  </Accordion>
+  
+  <Accordion title="Step 5: Schedule or send immediately">
+    Choose to send your bulk request immediately or schedule it for optimal timing.
+  </Accordion>
+  
+  <Accordion title="Step 6: Monitor results">
+    Track delivery rates, response rates, and conversion metrics to optimize future campaigns.
+  </Accordion>
+</AccordionGroup>
+
+## Message template best practices
+
+<CodeGroup>
+```text SMS Template Example
+Hi {FirstName}! Thanks for choosing {BusinessName}. We'd love to hear about your experience. Rate us here: {ReviewLink}
+```
+
+```text Email Template Example
+Subject: How was your experience with {BusinessName}?
+
+Hi {FirstName},
+
+Thank you for choosing {BusinessName} for your recent {ServiceType}.
+
+We're committed to providing the best possible experience for our customers. Would you mind taking a moment to share your feedback?
+
+[Rate Your Experience]
+
+Your input helps us continue improving and helps other customers make informed decisions.
+
+Thank you,
+The {BusinessName} Team
+```
+</CodeGroup>
+
+<Tip>
+  Keep SMS messages under 160 characters for optimal delivery and avoid triggering spam filters.
+</Tip>
+
+## When to send bulk requests
+
+<Tabs>
+  <Tab title="Post-purchase">
+    Send requests 24-48 hours after a purchase or service completion when the experience is fresh in the customer's mind.
+    
+    **Ideal timing by industry:**
+    - Restaurants: Same day or next day
+    - Hotels: Day of checkout
+    - Retail: 1-2 days after purchase
+    - Services: Immediately after completion
+  </Tab>
+  
+  <Tab title="Seasonal campaigns">
+    Launch bulk requests during peak seasons or after major events to capture high-volume feedback.
+    
+    Examples:
+    - Post-holiday season for retailers
+    - End of summer for hospitality
+    - After annual events or promotions
+  </Tab>
+  
+  <Tab title="Re-engagement">
+    Send bulk requests to past customers who haven't left reviews to boost your overall rating.
+    
+    <Warning>
+      Only send re-engagement campaigns to customers who had recent positive interactions (within 30-60 days) to maintain authenticity.
+    </Warning>
+  </Tab>
+  
+  <Tab title="New location launches">
+    Quickly build review volume for new locations by sending bulk requests to all recent customers.
+  </Tab>
+</Tabs>
+
+## Advanced bulk request strategies
+
+### Segmentation
+
+Divide your customer list into segments for more targeted messaging:
+
+<CardGroup cols={2}>
+  <Card title="By service type" icon="tags">
+    Customize messages based on which product or service the customer used.
+  </Card>
+  
+  <Card title="By customer value" icon="star">
+    Prioritize requests to high-value customers who are more likely to leave detailed, positive reviews.
+  </Card>
+  
+  <Card title="By location" icon="location-dot">
+    Send location-specific requests if you have multiple business locations.
+  </Card>
+  
+  <Card title="By interaction date" icon="calendar">
+    Segment by recency to ensure you're contacting customers at the optimal time.
+  </Card>
+</CardGroup>
+
+### Automation workflows
+
+<Steps>
+  <Step title="Set up triggers">
+    Configure automatic bulk requests to send when specific conditions are met (e.g., after appointment completion, order fulfillment).
+  </Step>
+  
+  <Step title="Create follow-up sequences">
+    Design multi-step campaigns that send gentle reminders to non-responders after a few days.
+  </Step>
+  
+  <Step title="Integrate with your systems">
+    Connect RatingFlow to your CRM, POS, or booking system for seamless automation.
+  </Step>
+</Steps>
+
+### Performance optimization
+
+<Accordion title="Test send times">
+  Experiment with different sending times to find when your customers are most likely to respond. Generally, Tuesday-Thursday between 10am-2pm performs well.
+</Accordion>
+
+<Accordion title="A/B test messaging">
+  Try different message variations to see which language, tone, and calls-to-action generate the highest response rates.
+</Accordion>
+
+<Accordion title="Monitor deliverability">
+  Track bounce rates and unsubscribe rates to maintain healthy sender reputation and compliance.
+</Accordion>
+
+<Accordion title="Analyze conversion funnels">
+  Identify where customers drop off in the review process and optimize those steps.
+</Accordion>
+
+## Compliance and best practices
+
+<Warning>
+  Always ensure you have explicit permission to contact customers via SMS or email and comply with relevant regulations.
+</Warning>
+
+### Legal requirements
+
+- **TCPA (SMS):** Obtain prior express written consent before sending marketing text messages
+- **CAN-SPAM (Email):** Include a physical address and unsubscribe link in all emails
+- **GDPR (EU customers):** Ensure data processing consent and provide data access/deletion options
+- **Review platform policies:** Follow Google, Facebook, and other platforms' review solicitation guidelines
+
+### Ethical considerations
+
+<CardGroup cols={2}>
+  <Card title="Don't incentivize reviews" icon="hand-holding-dollar">
+    Never offer payment, discounts, or rewards specifically for positive reviews - this violates most platform policies.
+  </Card>
+  
+  <Card title="Request honest feedback" icon="comment">
+    Encourage authentic reviews rather than asking only satisfied customers to leave public feedback.
+  </Card>
+  
+  <Card title="Respect opt-outs" icon="ban">
+    Honor unsubscribe requests immediately and maintain suppression lists.
+  </Card>
+  
+  <Card title="Be transparent" icon="eye">
+    Clearly identify who you are and why you're requesting a review.
+  </Card>
+</CardGroup>
+
+<Tip>
+  RatingFlow's smart-routing system helps you maintain compliance by giving all customers an opportunity to provide feedback while protecting your public reputation from unfair negative reviews.
+</Tip>
+
+## Use cases by industry
+
+<AccordionGroup>
+  <Accordion title="Healthcare providers">
+    Send bulk requests to all patients after appointments to systematically gather feedback and improve online visibility.
+    
+    Benefits:
+    - Build trust with prospective patients
+    - Improve local search rankings
+    - Identify service improvement opportunities
+  </Accordion>
+  
+  <Accordion title="Real estate agents">
+    Request reviews from all clients after closing to build a strong portfolio of testimonials.
+    
+    Benefits:
+    - Establish credibility with new leads
+    - Differentiate from competitors
+    - Showcase successful transactions
+  </Accordion>
+  
+  <Accordion title="Hospitality businesses">
+    Send bulk requests to all recent guests to maximize review volume during peak seasons.
+    
+    Benefits:
+    - Improve OTA (Online Travel Agency) rankings
+    - Attract more bookings
+    - Manage reputation proactively
+  </Accordion>
+  
+  <Accordion title="Digital marketing agencies">
+    Use bulk requests on behalf of multiple clients to deliver reputation management services at scale.
+    
+    Benefits:
+    - Offer white label reputation management
+    - Generate recurring revenue
+    - Provide measurable ROI to clients
+    
+    <Note>
+      RatingFlow offers a white label solution that allows agencies to rebrand the entire dashboard and reporting system under their own brand.
+    </Note>
+  </Accordion>
+</AccordionGroup>

@@ -1,122 +1,126 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "RatingFlow",
+  "theme": "almond",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#5B47DB",
+    "light": "#7B6EEE",
+    "dark": "#3D2FAA"
   },
-  "favicon": "/favicon.svg",
+  "navbar": {
+    "primary": {
+      "type": "github",
+      "href": "https://github.com/modernharp/get-more-google-reviews"
+    }
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/modernharp/get-more-google-reviews"
+    }
+  },
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Documentation",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Get Started",
+            "pages": ["introduction", "quickstart", "platform-overview"]
+          },
+          {
+            "group": "Core Features",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "features/automated-review-requests",
+              "features/qr-code-reviews",
+              "features/white-label-solution",
+              "features/website-widgets",
+              "features/sentiment-routing"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Use Cases",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "use-cases/local-businesses",
+              "use-cases/agencies",
+              "use-cases/healthcare",
+              "use-cases/hospitality"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Features",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Review Collection",
             "pages": [
-              "api-reference/introduction"
+              "review-collection/sms-email-campaigns",
+              "review-collection/qr-codes",
+              "review-collection/bulk-requests"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Reputation Management",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "reputation/negative-feedback-shield",
+              "reputation/sentiment-analysis",
+              "reputation/review-monitoring"
+            ]
+          },
+          {
+            "group": "Integration & Display",
+            "pages": [
+              "integration/google-maps",
+              "integration/facebook-reviews",
+              "integration/trustpilot",
+              "integration/website-widgets"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "For Agencies",
+        "groups": [
+          {
+            "group": "White Label",
+            "pages": [
+              "white-label/overview",
+              "white-label/branding",
+              "white-label/client-management",
+              "white-label/reporting"
+            ]
+          },
+          {
+            "group": "Agency Tools",
+            "pages": [
+              "agency/multi-client-dashboard",
+              "agency/pricing-plans",
+              "agency/reseller-program"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Resources",
+        "groups": [
+          {
+            "group": "Best Practices",
+            "pages": [
+              "best-practices/review-generation",
+              "best-practices/local-seo",
+              "best-practices/response-templates"
+            ]
+          },
+          {
+            "group": "Support",
+            "pages": [
+              "support/faq",
+              "support/troubleshooting",
+              "support/contact"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+    ]
   }
 }

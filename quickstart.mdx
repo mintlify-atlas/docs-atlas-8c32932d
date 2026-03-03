@@ -1,80 +1,172 @@
 ---
-title: "Quickstart"
-description: "Start building awesome documentation in minutes"
+title: Quickstart
+description: Get started with RatingFlow and send your first review request in minutes
 ---
 
-## Get started in three steps
+Get your RatingFlow account set up and send your first review request in under 10 minutes. This guide walks you through the essential steps to start collecting 5-star reviews and protecting your brand reputation.
 
-Get your documentation site running locally and make your first customization.
+## Prerequisites
 
-### Step 1: Set up your local environment
+Before you begin, make sure you have:
 
-<AccordionGroup>
-  <Accordion icon="copy" title="Clone your docs locally">
-    During the onboarding process, you created a GitHub repository with your docs content if you didn't already have one. You can find a link to this repository in your [dashboard](https://dashboard.mintlify.com).
+- A RatingFlow account (sign up at [ratingflow.co](https://ratingflow.co))
+- Your Google Business Profile or other review platform credentials
+- A list of customer contact information (email addresses or phone numbers)
+
+## Set up your account
+
+<Steps>
+  <Step title="Create your account">
+    Sign up for RatingFlow and verify your email address. Choose the plan that fits your business size and needs.
     
-    To clone the repository locally so that you can make and preview changes to your docs, follow the [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) guide in the GitHub docs.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Start the preview server">
-    1. Install the Mintlify CLI: `npm i -g mint`
-    2. Navigate to your docs directory and run: `mint dev`
-    3. Open `http://localhost:3000` to see your docs live!
+    <Tip>
+    Agencies should select the white label plan to rebrand the platform for your clients.
+    </Tip>
+  </Step>
+  
+  <Step title="Configure your business profile">
+    Add your business information including:
+    - Business name and logo
+    - Industry and location
+    - Review platform links (Google Maps, Facebook, Trustpilot)
+    - Contact preferences
     
-    <Tip>Your preview updates automatically as you edit files.</Tip>
-  </Accordion>
-</AccordionGroup>
-
-### Step 2: Deploy your changes
-
-<AccordionGroup>
-  <Accordion icon="github" title="Install our GitHub app">
-    Install the Mintlify GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app).
+    <Info>
+    Make sure your Google Business Profile link is accurate — this is where your 5-star reviews will be directed.
+    </Info>
+  </Step>
+  
+  <Step title="Set up sentiment routing">
+    Configure the smart-routing system that protects your brand:
     
-    Our GitHub app automatically deploys your changes to your docs site, so you don't need to manage deployments yourself.
-</Accordion>
-<Accordion icon="palette" title="Update your site name and colors">
-    For a first change, let's update the name and colors of your docs site.
+    - **High ratings (4-5 stars)**: Direct to public review platforms
+    - **Low ratings (1-3 stars)**: Route to private feedback form
+    
+    Customize the rating threshold and feedback form fields to match your business needs.
+    
+    <Warning>
+    Test your routing flow before sending to customers. Click "Preview" to see both the positive and negative customer journeys.
+    </Warning>
+  </Step>
+  
+  <Step title="Customize your messaging">
+    Personalize the review request messages sent to your customers:
+    
+    - Email subject lines and body text
+    - SMS message templates
+    - Thank you page content
+    - Follow-up sequences
+    
+    Use merge tags like `{customer_name}` and `{business_name}` to personalize each request.
+  </Step>
+</Steps>
 
-    1. Open `docs.json` in your editor.
-    2. Change the `"name"` field to your project name.
-    3. Update the `"colors"` to match your brand.
-    4. Save and see your changes instantly at `http://localhost:3000`.
+## Send your first review request
 
-    <Tip>Try changing the primary color to see an immediate difference!</Tip>
-  </Accordion>
-</AccordionGroup>
+Choose the method that works best for your business:
 
-### Step 3: Go live
+<Tabs>
+  <Tab title="SMS/Email campaign">
+    <Steps>
+      <Step title="Upload your customer list">
+        Import contacts via CSV upload or manual entry. Include customer name, email, and/or phone number.
+      </Step>
+      
+      <Step title="Select your audience">
+        Choose who receives the review request:
+        - All customers
+        - Recent purchases only
+        - High-value customers
+        - Custom segment
+      </Step>
+      
+      <Step title="Choose your channel">
+        Send via SMS, email, or both for maximum response rates.
+        
+        <Tip>
+        SMS typically gets 3-5x higher open rates than email, but email allows for more detailed messaging.
+        </Tip>
+      </Step>
+      
+      <Step title="Schedule or send immediately">
+        Launch your campaign immediately or schedule it for optimal timing (avoid weekends and late nights).
+      </Step>
+    </Steps>
+  </Tab>
+  
+  <Tab title="QR code">
+    <Steps>
+      <Step title="Generate your QR code">
+        Navigate to **QR Codes** in your dashboard and click **Create New QR Code**. Select your review routing settings.
+      </Step>
+      
+      <Step title="Download and print">
+        Download the QR code image in high resolution. Print it on:
+        - Receipts
+        - Table tents
+        - Business cards
+        - Window decals
+      </Step>
+      
+      <Step title="Place strategically">
+        Position QR codes where customers can easily scan them:
+        - At checkout counters
+        - On receipts
+        - Near exits
+        - On product packaging
+      </Step>
+    </Steps>
+    
+    <Info>
+    Each QR code includes your smart-routing system — customers see the rating screen first, then get directed based on their sentiment.
+    </Info>
+  </Tab>
+</Tabs>
 
-<Accordion icon="rocket" title="Publish your docs">
-  1. Commit and push your changes.
-  2. Your docs will update and be live in moments!
-</Accordion>
+## Monitor your results
+
+Once you've sent your first requests, track performance in real-time:
+
+<CardGroup cols={2}>
+  <Card title="Review dashboard" icon="chart-line">
+    Monitor incoming reviews, response rates, and average ratings across all platforms
+  </Card>
+  
+  <Card title="Sentiment analysis" icon="face-smile">
+    See how many customers went public vs. private, and identify trends in feedback
+  </Card>
+  
+  <Card title="Campaign metrics" icon="bullseye">
+    Track open rates, click rates, and completion rates for SMS and email campaigns
+  </Card>
+  
+  <Card title="Private feedback" icon="shield">
+    Review negative feedback privately and respond directly to unhappy customers
+  </Card>
+</CardGroup>
 
 ## Next steps
 
-Now that you have your docs running, explore these key features:
+Now that you're collecting reviews, take your reputation management to the next level:
 
 <CardGroup cols={2}>
-
-<Card title="Write Content" icon="pen-to-square" href="/essentials/markdown">
-  Learn MDX syntax and start writing your documentation.
-</Card>
-
-<Card title="Customize style" icon="palette" href="/essentials/settings">
-  Make your docs match your brand perfectly.
-</Card>
-
-<Card title="Add code examples" icon="square-code" href="/essentials/code">
-  Include syntax-highlighted code blocks.
-</Card>
-
-<Card title="API documentation" icon="code" href="/api-reference/introduction">
-  Auto-generate API docs from OpenAPI specs.
-</Card>
-
+  <Card title="Embed widgets on your website" icon="code" href="/features/website-widgets">
+    Display your 5-star reviews directly on your website to boost conversions
+  </Card>
+  
+  <Card title="Set up automated campaigns" icon="robot" href="/features/automated-review-requests">
+    Create automated workflows that request reviews after every purchase or appointment
+  </Card>
+  
+  <Card title="Integrate additional platforms" icon="plug" href="/integration/google-maps">
+    Connect Facebook, Trustpilot, and other review platforms
+  </Card>
+  
+  <Card title="White label for clients" icon="palette" href="/white-label/overview">
+    Agencies: Rebrand the platform and offer reputation management to your clients
+  </Card>
 </CardGroup>
 
 <Note>
-  **Need help?** See our [full documentation](https://mintlify.com/docs) or join our [community](https://mintlify.com/community).
+Need help? Visit our [support center](/support/faq) or [contact our team](/support/contact) for personalized onboarding assistance.
 </Note>

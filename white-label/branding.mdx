@@ -1,0 +1,127 @@
+---
+title: Custom branding configuration
+description: Configure your logo, colors, domain, and brand identity across the platform
+---
+
+## Brand customization options
+
+With RatingFlow's white label solution, you can customize every visual aspect of the platform to match your agency's brand identity. Your clients will see your branding throughout their entire experience.
+
+<Info>
+  All branding changes apply across the dashboard, reports, email notifications, and customer-facing review pages.
+</Info>
+
+## Setting up your branding
+
+<Steps>
+  <Step title="Upload your logo">
+    Upload your agency logo in both horizontal and square formats. Your logo appears in the dashboard header, login page, and all reports.
+    
+    **Recommended specifications:**
+    - Horizontal logo: 300x80px (PNG or SVG)
+    - Square logo: 200x200px (PNG or SVG)
+    - Transparent background for best results
+  </Step>
+  
+  <Step title="Choose your color scheme">
+    Customize the primary and secondary colors used throughout the interface. Your colors will be applied to buttons, links, navigation elements, and charts.
+    
+    **Color options:**
+    - Primary brand color (buttons, CTAs)
+    - Secondary accent color (highlights, links)
+    - Background colors (light/dark mode support)
+  </Step>
+  
+  <Step title="Configure your custom domain">
+    Point your own subdomain to RatingFlow to maintain complete brand consistency. Your clients will access the platform at your domain, not RatingFlow's.
+    
+    **Domain setup:**
+    - Choose a subdomain (e.g., `reviews.youragency.com`)
+    - Add the provided DNS records to your domain
+    - Enable SSL certificate (automatic)
+  </Step>
+  
+  <Step title="Customize email templates">
+    Your logo and colors automatically apply to all system emails, including review requests, notifications, and reports sent to clients.
+  </Step>
+</Steps>
+
+## Branding best practices
+
+<CardGroup cols={2}>
+  <Card title="Use high-quality assets" icon="image">
+    Upload high-resolution logos and ensure colors meet accessibility standards for readability.
+  </Card>
+  
+  <Card title="Test across devices" icon="mobile">
+    Preview your branding on desktop and mobile to ensure it looks professional everywhere.
+  </Card>
+  
+  <Card title="Maintain consistency" icon="palette">
+    Use the same colors and logos that appear on your website and marketing materials.
+  </Card>
+  
+  <Card title="Consider contrast" icon="eye">
+    Ensure text remains readable against your custom colors in both light and dark themes.
+  </Card>
+</CardGroup>
+
+## What gets branded
+
+### Dashboard interface
+
+Your logo and colors appear throughout the admin dashboard, including:
+- Navigation header
+- Sidebar menu
+- Dashboard widgets
+- Data visualizations and charts
+
+### Client-facing elements
+
+Your branding is visible on all customer touchpoints:
+- Review request pages
+- Feedback forms (for 1-3 star ratings)
+- QR code landing pages
+- Website widgets showing reviews
+
+### Reports and communications
+
+All generated reports and automated emails display your brand:
+- PDF reports
+- Email notifications
+- Review request SMS/emails
+- Summary dashboards
+
+<Warning>
+  RatingFlow branding is completely hidden in white label accounts. Your clients will not see any reference to RatingFlow in their experience.
+</Warning>
+
+## Custom domain setup
+
+### DNS configuration
+
+To use your own domain, you'll need to add these DNS records:
+
+```bash
+Type: CNAME
+Name: reviews (or your chosen subdomain)
+Value: whitelabel.ratingflow.co
+```
+
+### SSL certificate
+
+Once your DNS records propagate, RatingFlow automatically provisions an SSL certificate for your custom domain. This typically takes 10-15 minutes.
+
+<Tip>
+  Use a subdomain like `reviews.youragency.com` or `reputation.youragency.com` to keep your main website separate.
+</Tip>
+
+## Previewing your branding
+
+Before going live, use the preview feature to see how your branding appears across different pages and devices. You can make adjustments until everything looks perfect.
+
+## Next steps
+
+<Card title="Start managing clients" icon="users" href="/white-label/client-management">
+  Once your branding is configured, add your first client and begin offering reputation management services.
+</Card>
