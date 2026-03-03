@@ -1,0 +1,136 @@
+{
+  "projectType": "saas",
+  "projectName": "RatingFlow",
+  "projectDescription": "Online reputation management platform that helps businesses automate positive review collection and protect their brand from public negativity.",
+  "theme": "almond",
+  "primaryColor": "#5B47DB",
+  "lightColor": "#7B6EEE",
+  "darkColor": "#3D2FAA",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": ["introduction", "quickstart", "platform-overview"]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/automated-review-requests",
+              "features/qr-code-reviews",
+              "features/white-label-solution",
+              "features/website-widgets",
+              "features/sentiment-routing"
+            ]
+          },
+          {
+            "group": "Use Cases",
+            "pages": [
+              "use-cases/local-businesses",
+              "use-cases/agencies",
+              "use-cases/healthcare",
+              "use-cases/hospitality"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Features",
+        "groups": [
+          {
+            "group": "Review Collection",
+            "pages": [
+              "review-collection/sms-email-campaigns",
+              "review-collection/qr-codes",
+              "review-collection/bulk-requests"
+            ]
+          },
+          {
+            "group": "Reputation Management",
+            "pages": [
+              "reputation/negative-feedback-shield",
+              "reputation/sentiment-analysis",
+              "reputation/review-monitoring"
+            ]
+          },
+          {
+            "group": "Integration & Display",
+            "pages": [
+              "integration/google-maps",
+              "integration/facebook-reviews",
+              "integration/trustpilot",
+              "integration/website-widgets"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "For Agencies",
+        "groups": [
+          {
+            "group": "White Label",
+            "pages": [
+              "white-label/overview",
+              "white-label/branding",
+              "white-label/client-management",
+              "white-label/reporting"
+            ]
+          },
+          {
+            "group": "Agency Tools",
+            "pages": [
+              "agency/multi-client-dashboard",
+              "agency/pricing-plans",
+              "agency/reseller-program"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Resources",
+        "groups": [
+          {
+            "group": "Best Practices",
+            "pages": [
+              "best-practices/review-generation",
+              "best-practices/local-seo",
+              "best-practices/response-templates"
+            ]
+          },
+          {
+            "group": "Support",
+            "pages": [
+              "support/faq",
+              "support/troubleshooting",
+              "support/contact"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Automated review requests via SMS and email",
+    "QR code review generation for physical locations",
+    "Smart sentiment routing (5-star to public, 1-3 star to private)",
+    "White label solution for agencies",
+    "Embeddable website widgets for social proof",
+    "Multi-platform integration (Google Maps, Facebook, Trustpilot)",
+    "Negative feedback shield and private resolution",
+    "Bulk review request campaigns"
+  ],
+  "publicApiSurface": [
+    "SMS/Email review request API",
+    "QR code generation endpoint",
+    "Review widget embed codes",
+    "Sentiment routing configuration",
+    "White label branding API",
+    "Analytics and reporting endpoints",
+    "Google Maps integration",
+    "Facebook Reviews integration",
+    "Trustpilot integration",
+    "Webhook notifications for new reviews"
+  ]
+}
